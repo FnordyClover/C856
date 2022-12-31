@@ -20,7 +20,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-image: url("https://images.unsplash.com/photo-1663729336563-82577d527f2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dHJvcGljJTIwaXNsYW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-  min-height: 100%;
+  min-height: 50%;
 }
 
 .w3-bar .w3-button {
@@ -30,151 +30,96 @@ body, html {
 </head>
 <body>
 
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-button w3-wide">Taniti</a>
-    <!-- Right-sided navbar links -->
-
-        <div class="w3-col s1">
-        <a href="index.html" class="w3-button w3-block">Home</a>
-        </div>
-        <div class="w3-col s2">
-        <a href="ReasonToCome.html" class="w3-button w3-block ">Reasons to Come</a>
-        </div>
-        <div class="w3-col s1">
-        <a href="transportation.html" class="w3-button w3-block ">Transportation</a>
-        </div>
-        <div class="w3-col s2">
-        <a href="Lodging.html" class="w3-button w3-block ">Lodging</a>
-        </div>
-        <div class="w3-col s2">
-        <a href="Local.html" class="w3-button w3-block ">Local Amenities</a>
-        </div>
-        <div class="w3-col s1">
-        <a href="faqs.html" class="w3-button w3-block ">FAQs</a>
-        </div>
-    </div>
-    </div>
+  <div class="w3-bar w3-black">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="ReasonToCome.html" class="w3-bar-item w3-button w3-hide-small">Reasons To Come </a>
+    <a href="Transportation.html" class="w3-bar-item w3-button w3-hide-small">Transportation</a>
+    <a href="Lodging.html" class="w3-bar-item w3-button w3-hide-small">Lodging</a>
+    <a href="Local.html" class="w3-bar-item w3-button w3-hide-small">Local Amenities</a>
+    <a href="faqs.html" class="w3-bar-item w3-button w3-hide-small">FAQs</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
 
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-    <a href="ReasonToCome.html" onclick="w3_close()" class="w3-bar-item w3-button">Reasons to Come</a>
-    <a href="transportation.html" onclick="w3_close()" class="w3-bar-item w3-button">Transportation</a>
-    <a href="Lodging.html" onclick="w3_close()" class="w3-bar-item w3-button">Lodging</a>
-    <a href="Local.html" onclick="w3_close()" class="w3-bar-item w3-button">Local Amenities</a>
-    <a href="faqs.html" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
-  </nav>
+
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Welcome to Taniti</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to Taniti</span><br>
-    <span class="w3-large">Come For The views, Stay For The Amenities</span>
-    <p><a href="#MoreInf" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn More</a></p>
-  </div> 
 
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT Taniti</h3>
-  <p class="w3-center w3-large">Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture.</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <!-- Team Section -->
-        <div class="w3-container" style="padding:12px 16px" id="MoreInf">
-        <h3 class="w3-center">More Info</h3>
-        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-card">
-                <img src="https://images.unsplash.com/photo-1529154166925-574a0236a4f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"alt="statue"width="100%" height="100%">
-                <div class="w3-container">
-                <h3>Local Amenities</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <div class="w3-col s120">
-                    <a href="#MoreInfo" class="w3-button w3-light-grey w3-block ">Local Attractions</a>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-card">
-                <img src="https://images.unsplash.com/photo-1586611292717-f828b167408c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmVzb3J0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"alt="Car" width="100%" height="100%">
-                <div class="w3-container">
-                <h3>Reasons to come</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <a href="#MoreInfo" class="w3-button w3-light-grey w3-block ">Reasons to come</a>
-                </div>
-            </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-card">
-                <img src="https://images.unsplash.com/photo-1603467722504-50bb4cf540dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTV8OTk1NDQ1NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"alt="Car" width="100%" height="100%">
-                <div class="w3-container">
-                <h3>Transportation</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <a href="#MoreInfo" class="w3-button w3-light-grey w3-block ">Transportation</a>
-                </div>
-            </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-card">
-                <img src="https://images.unsplash.com/photo-1481325828126-d57127c9d39f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHJvcGljJTIwaXNsYW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="Scenic Island" width="100%" height="100%">
-                <div class="w3-container">
-                <h3>Lodging</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <a href="#MoreInfo" class="w3-button w3-light-grey w3-block ">Lodging</a>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  </footer>
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Come Join Us</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to Taniti</span><br>
+    <span class="w3-large">Relax with us </span>
+  </div> 
+</header>
+<body>    
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="ResortPage(event, 'Vacation');" id="Vacatio">
+          <div class="w3-col s6 tablink">Vacation</div>
+        </a>
+        <a href="javascript:void(0)" onclick="ResortPage(event, 'Honeymoon');" id="Honeymoo">
+          <div class="w3-col s6 tablink">Honeymoon</div>
+        </a>
+        <a href="javascript:void(0)" onclick="ResortPage(event, 'Bussinesstrip');" id="Bussinesstri">
+          <div class="w3-col s6 tablink">Bussiness Trip</div>
+        </a>
  
+      </div>
+  
+  
+      <div id="Vacatio" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Vacation</h5>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+          
+      
+        </div>
+  
+      <div id="Honeymoo" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Honeymoon</h5>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+      </div>
+      <div id="Bussinesstri" class="w3-container menu w3-padding-48 w3-card-2">
+        <h5>Bussiness Trip</h5>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi quos, magnam ratione iure natus placeat recusandae, ducimus ex exercitationem dignissimos nam. Repellat, nostrum quo accusantium voluptatibus dignissimos laborum ex.</p>
+  </body>
+
 <script>
 // Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
+function ResortPage(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
   }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
+  document.getElementById("myLink").click();
 </script>
 
 </body>
