@@ -32,46 +32,23 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-button w3-wide">Taniti</a>
-    <!-- Right-sided navbar links -->
-
-        <div class="w3-col s1">
-        <a href="index.html" class="w3-button w3-block">Home</a>
-        </div>
-        <div class="w3-col s2">
-        <a href="ReasonToCome.html" class="w3-button w3-block ">Reasons to Come</a>
-        </div>
-        <div class="w3-col s1">
-        <a href="transportation.html" class="w3-button w3-block ">Transportation</a>
-        </div>
-        <div class="w3-col s2">
-        <a href="Lodging.html" class="w3-button w3-block ">Lodging</a>
-        </div>
-        <div class="w3-col s2">
-        <a href="Local.html" class="w3-button w3-block ">Local Amenities</a>
-        </div>
-        <div class="w3-col s1">
-        <a href="faqs.html" class="w3-button w3-block ">FAQs</a>
-        </div>
-    </div>
-    </div>
+  <div class="w3-bar w3-black">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="ReasonToCome.html" class="w3-bar-item w3-button w3-hide-small">Reasons To Come </a>
+    <a href="Transportation.html" class="w3-bar-item w3-button w3-hide-small">Transportation</a>
+    <a href="Lodging.html" class="w3-bar-item w3-button w3-hide-small">Lodging</a>
+    <a href="Local.html" class="w3-bar-item w3-button w3-hide-small">Local Amenities</a>
+    <a href="faqs.html" class="w3-bar-item w3-button w3-hide-small">FAQs</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
 
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-    <a href="ReasonToCome.html" onclick="w3_close()" class="w3-bar-item w3-button">Reasons to Come</a>
-    <a href="transportation.html" onclick="w3_close()" class="w3-bar-item w3-button">Transportation</a>
-    <a href="Lodging.html" onclick="w3_close()" class="w3-bar-item w3-button">Lodging</a>
-    <a href="Local.html" onclick="w3_close()" class="w3-bar-item w3-button">Local Amenities</a>
-    <a href="faqs.html" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
-  </nav>
+
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
